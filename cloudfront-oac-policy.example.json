@@ -8,10 +8,10 @@
         "Service": "cloudfront.amazonaws.com"
       },
       "Action": "lambda:InvokeWebFunctionEndpoint",
-      "Resource": "arn:aws:lambda:<REGION>:014498617808:web-function/hono-lambda-web/endpoint/dev",
+      "Resource": "arn:aws:lambda:<REGION>:123456789012:web-function/hono-lambda-web/endpoint/dev",
       "Condition": {
         "StringEquals": {
-          "aws:SourceArn": "arn:aws:cloudfront::014498617808:distribution/E127DFEJW83WI5"
+          "aws:SourceArn": "arn:aws:cloudfront::123456789012:distribution/ABCDEF12345678"
         }
       }
     }
